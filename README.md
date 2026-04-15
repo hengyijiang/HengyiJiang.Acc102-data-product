@@ -9,16 +9,7 @@
 
 A teaching-oriented quantitative research project that screens stocks combining **positive price momentum** and **relatively high dividend yield** for finance students and researchers learning WRDS/CRSP/Compustat data workflows.
 
-## 30-Second Quick Start (Product Entry)
 
-| If you are... | View directly |
-|--------------|---------------|
-| **Want to quickly understand strategy performance** | [Click to view sample stock selection results](output_teaching/top_picks_latest.csv) |
-| **Want to see return performance** | [Click to view cumulative return curve](output_teaching/portfolio_cumulative_return.png) |
-| **Want to understand the dual-factor logic** | Read "Problem Definition" Section 1 above |
-| **Want to run it yourself** | See "How to Run" Section 5 |
-
-**Core Value Proposition**: Academic-grade rigor (WRDS data + bias-free design) made accessible as a teaching-friendly dual-factor stock screening tool.---
 
 ## 2. Data
 
