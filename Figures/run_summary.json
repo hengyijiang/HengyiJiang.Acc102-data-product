@@ -1,0 +1,74 @@
+{
+  "project_name": "Teaching Version - WRDS Dividend + Momentum Single File",
+  "problem_definition": "Retrieve CRSP price data and Compustat dividend data from WRDS within the specified time window,and filter stocks with upward price momentum and high dividend yield.",
+  "config": {
+    "start_date": "2020-01-01",
+    "end_date": "2024-12-31",
+    "momentum_window": 12,
+    "min_momentum": 0.0,
+    "dividend_quantile": 0.7,
+    "report_lag_months": 6,
+    "min_price": 5.0,
+    "dividend_field": null,
+    "top_n": 10,
+    "momentum_weight": 0.5,
+    "dividend_weight": 0.5,
+    "out_dir": "output_teaching"
+  },
+  "dividend_field_used": "dvpsx_f",
+  "crsp_rows": 242216,
+  "compustat_rows": 74076,
+  "linked_rows": 33926,
+  "ranked_rows": 137805,
+  "screened_rows": 510,
+  "latest_selection_date": "2024-12-31",
+  "latest_top_n_count": 10,
+  "performance_summary": [
+    {
+      "metric": "months",
+      "value": 50.0
+    },
+    {
+      "metric": "avg_monthly_return",
+      "value": 0.01822053222222222
+    },
+    {
+      "metric": "annualized_return",
+      "value": 0.19174082466439812
+    },
+    {
+      "metric": "annualized_vol",
+      "value": 0.30553564801162436
+    },
+    {
+      "metric": "annualized_sharpe",
+      "value": 0.7156166165538498
+    },
+    {
+      "metric": "max_drawdown",
+      "value": -0.16856356070746914
+    },
+    {
+      "metric": "final_cumulative_return",
+      "value": 1.0769413710523508
+    },
+    {
+      "metric": "avg_n_stocks",
+      "value": 10.0
+    }
+  ],
+  "output_files": [
+    "crsp_monthly.csv",
+    "compustat_dividends.csv",
+    "ranked_stock_universe.csv",
+    "screened_stocks.csv",
+    "top_picks_latest.csv",
+    "monthly_screen_counts.csv",
+    "portfolio_holdings_with_next_return.csv",
+    "portfolio_monthly.csv",
+    "performance_summary.csv",
+    "portfolio_cumulative_return.png",
+    "latest_month_signal_scatter.png",
+    "run_summary.json"
+  ]
+}
